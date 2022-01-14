@@ -8,7 +8,7 @@ Back End - PHP 7.4.3
 Database - MYSQL 8.0.27
 
 
-Database
+MySql
 
 CREATE TABLE Subject (
     	SubjectCode char(5) NOT NULL,
