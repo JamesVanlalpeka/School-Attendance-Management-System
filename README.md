@@ -1,2 +1,2 @@
 # SAMS
-School Attendance Management System Project (Assam Don Bosco University)
+School Attendance Management System Student Mini Project (Assam Don Bosco University)
