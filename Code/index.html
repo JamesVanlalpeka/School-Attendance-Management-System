@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+	<body>
+			<h1 style="margin:15px auto 0 auto; text-align:center; padding:20px; font-family:serif; color:white;">School Attendance Management System</h1>
+			<div class="login">
+						<button onclick="call('student')">Student Login</button>
+						<br>
+						<button onclick="call('teacher')">Teacher Login</button>
+						<br>
+						<button onclick="call('admin')">Admin Login</button>
+			</div>
+			<div id="student" class="modal">
+				<form class="modal-content animate" action="connect.php" method="post" name="student">
+					<div class="container">
+						<div class="login_title">Student Login</div>
+						<input type="text" name="username" placeholder="Username" required/>
+						<input type="password" name="password" placeholder="Password" required/>
+						<button name="submit" type="submit" value="student login">Login</button>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+      					<button type="button" onclick="document.getElementById('student').style.display='none'" class="cancelbtn">Cancel</button>
+      				</div>
+				</form>
+			</div>
+			<div id="teacher" class="modal">
+				<form class="modal-content animate" action="connect.php" method="post" name="teacher">
+					<div class="container">
+						<div class="login_title">Teacher Login</div>
+						<input type="text" name="username" placeholder="Username" required/>
+						<input type="password" name="password" placeholder="Password" required/>
+						<button name="submit" type="submit" value="teacher login">Login</button>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+      					<button type="button" onclick="document.getElementById('teacher').style.display='none'" class="cancelbtn">Cancel</button>
+      				</div>
+				</form>
+			</div>
+			<div id="admin" class="modal">
+				<form class="modal-content animate" action="connect.php" method="post" name="admin">
+					<div class="container">
+						<div class="login_title">Admin Login</div>
+						<input type="text" name="username" placeholder="Username" required/>
+						<input type="password" name="password" placeholder="Password" required/>
+						<button name="submit" type="submit" value="admin login"/>Login</button>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+      					<button type="button" onclick="document.getElementById('admin').style.display='none'" class="cancelbtn">Cancel</button>
+      				</div>
+				</form>
+			</div>
+		<br>
+		<script>
+			function call(val)
+			{
+				if(val == 'student')
+				{
+					document.getElementById('student').style.display = "block";
+				}
+				if(val == 'teacher')
+				{
+					document.getElementById('teacher').style.display = "block";
+				}
+				if(val == 'admin')
+				{
+					document.getElementById('admin').style.display = "block";
+				}
+			}
+		</script>
+	</body>
+</html>
+
+
